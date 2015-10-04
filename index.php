@@ -34,10 +34,35 @@
 <![endif]-->
 
     <div class="container-fluid">
-       <?php include('header.php'); ?>
+        <?php include('header.php'); ?>
+
+        <div class="highlights col-xs-12">
+            <div class="container">
+                <div class="slide col-xs-12 col-sm-8">
+                    <ul>
+                        <?php for($i = 1; $i < 4; $i++){ ?>
+                            <li>
+                                <a href="#">
+                                    <img src="http://placehold.it/700x320" alt="Destaque" title="Destaque">
+                                    <div class="details">
+                                        <div class="edition"><?php echo $i; ?>ª Edição</div>
+                                        <h1>Lorem ipsum dolor sit amet no his propriae reprimiq</h1>
+                                    </div>
+                                </a>
+                            </li>
+                        <?php } ?>
+                    </ul>
+                    <div class="buttons">
+                        <div class="prev"></div>
+                        <div class="next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/slide.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -14,7 +14,7 @@
     <nav class="col-xs-12">
         <div class="container">
             <ul>
-                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">PÃ¡gina Inicial</a></li>
                 <li><a href="#">Quem Somos</a></li>
                 <li><a href="#">Perfil</a></li>
                 <li><a href="#">Social</a></li>
@@ -28,14 +28,16 @@
     </nav>
     <div class="featured col-xs-12">
         <div class="container">
-            <p>Nesta Edição</p>
+            <p>Nesta EdiÃ§Ã£o</p>
             <ul>
-                <li><a href="#">20/10/2015 - Conheça o novo restaurante da Rua bla bla 1</a></li>
-                <li><a href="#">20/10/2015 - Conheça o novo restaurante da Rua bla bla 2</a></li>
-                <li><a href="#">20/10/2015 - Conheça o novo restaurante da Rua bla bla 3</a></li>
+                <?php for($i = 1; $i < 4; $i++){ ?>
+                    <li><a href="#">20/10/2015 - ConheÃ§a o novo restaurante da Rua bla bla <?php echo $i; ?></a></li>
+                <?php } ?>
             </ul>
-            <div class="button-next"></div>
-            <div class="button-prev"></div>
+            <div class="buttons">
+                <div class="prev"></div>
+                <div class="next"></div>
+            </div>
         </div>
     </div>
 </header>
