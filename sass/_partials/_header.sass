@@ -1,0 +1,109 @@
+header
+  margin:
+    top: 20px
+
+  .logo
+    padding:
+      left: 0
+      top: 10px
+      right: 20px
+
+    img
+      width: 90%
+
+  .ad
+    padding: 0
+
+    a
+      width: 100%
+      float: right
+      max-width: 728px
+      max-height: 90px
+
+    img
+      width: 100%
+      float: right
+
+  nav
+    margin:
+      top: 20px
+    border:
+      top: 1px solid $color-primary
+      bottom: 3px solid $color-primary
+
+    ul
+      text-align: center
+
+      li
+        display: inline-block
+        text:
+          transform: uppercase
+          align: center
+
+        &:hover
+          background:
+            color: $color-primary
+
+          a
+            color: $color-soft
+
+        a
+          width: 100%
+          height: 100%
+          padding: 14px 18px
+          display: block
+
+  .featured
+    background:
+      color: $color-gray-soft
+
+    p
+      width: 130px
+      float: left
+      margin:
+        left: 20px
+      color: $color-gray
+      text:
+        transform: uppercase
+      padding: 10px 0
+      background:
+        image: url("../images/arrow-right.png")
+        repeat: no-repeat
+        position-x: 105px
+        position-y: 10px
+
+    ul
+      width: 750px
+      float: left
+
+      li
+        font:
+          size: 0.8em
+        width: 100%
+        padding: 10px 0
+
+        a
+          color: $color-primary-soft
+          width: 100%
+          height: 100%
+          display: block
+
+    .button-prev,
+    .button-next
+      width: 14px
+      height: 14px
+      float: right
+      cursor: pointer
+      margin: 0 2px
+      padding: 14px 0
+      background:
+        position-y: 10px
+        repeat: no-repeat
+
+    .button-prev
+      background:
+        image: url("../images/arrow-left.png")
+
+    .button-next
+      background:
+        image: url("../images/arrow-right.png")

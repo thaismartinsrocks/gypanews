@@ -11,7 +11,7 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <title>GypaNews</title>
 
-    <link href='https://fonts.googleapis.com/css?family=Raleway:100,400,300,600,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel='stylesheet' type='text/css'>
     <link href="bower_components/fontawesome/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
@@ -62,9 +62,22 @@
                    </ul>
                </div>
            </nav>
+           <div class="featured col-xs-12">
+               <div class="container">
+                    <p>Nesta Edição</p>
+                   <ul>
+                       <li><a href="#">20/10/2015 - Conheça o novo restaurante da Rua bla bla 1</a></li>
+                       <li><a href="#">20/10/2015 - Conheça o novo restaurante da Rua bla bla 2</a></li>
+                       <li><a href="#">20/10/2015 - Conheça o novo restaurante da Rua bla bla 3</a></li>
+                   </ul>
+                   <div class="button-next"></div>
+                   <div class="button-prev"></div>
+               </div>
+           </div>
        </header>
     </div>
 
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

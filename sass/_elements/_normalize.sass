@@ -29,6 +29,9 @@ footer, header, hgroup, menu, nav, section
 
 body
   line-height: 1
+  font:
+    family: 'Roboto Condensed', Arial, sans-serif
+  color: $color-dark
 
 ol, ul
   list-style: none
@@ -45,3 +48,19 @@ q:before, q:after
 table
   border-collapse: collapse
   border-spacing: 0
+
+.container-fluid
+  padding: 0
+  margin: 0
+
+a
+  color: $color-primary
+
+  &:hover,
+  &:active,
+  &:active:hover,
+  &:active:focus,
+  &:focus,
+  &:visited
+    text:
+      decoration: none
