@@ -29,9 +29,18 @@
 </head>
 <body>
 
-<!--[if lt IE 7]>
-<p>Você está usando um navegador <strong>desatualizado</strong>. Por favor, <a href="http://browsehappy.com/">atualize-o</a> para ter uma melhor experiência.</p>
-<![endif]-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.4&appId=522695374411593";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!--[if lt IE 7]>
+    <p>Você está usando um navegador <strong>desatualizado</strong>. Por favor, <a href="http://browsehappy.com/">atualize-o</a> para ter uma melhor experiência.</p>
+    <![endif]-->
 
     <div class="container-fluid">
         <?php include('header.php'); ?>
@@ -57,8 +66,140 @@
                         <div class="next"></div>
                     </div>
                 </div>
+                <div class="search col-xs-12 col-sm-4">
+                    <form method="post">
+                        <input type="text" name="s" placeholder="Pesquisar por...">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="facebook-box col-xs-12 col-sm-4">
+                    <div class="fb-page" data-href="https://www.facebook.com/gypanews" data-small-header="true" data-width="380px" data-height="245px" data-hide-cover="true" data-show-facepile="true" data-show-posts="true">
+                        <div class="fb-xfbml-parse-ignore">
+                            <blockquote cite="https://www.facebook.com/gypanews">
+                                <a href="https://www.facebook.com/gypanews">Conheça a página do Facebook da Gypa News</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <div class="news col-xs-12">
+
+            <div class="container">
+                <section class="col-xs-12 col-sm-8">
+                    <h1><span>Reportagens</span></h1>
+
+                    <article class="first col-xs-12 col-sm-6">
+                        <div class="image col-xs-12">
+                            <a href="#">
+                                <img src="http://placehold.it/350x230" alt="Noticia" title="Noticia">
+                                <p>3° Edição</p>
+                            </a>
+                        </div>
+
+                        <div class="content col-xs-6">
+                            <p class="small">10/05/2015 - Por <a href="#">Ana Claudia</a></p>
+                        </div>
+                        <div class="content col-xs-6">
+                            <p class="small pull-right"><a href="#"><i class="fa fa-comments-o"></i> 1 comentário</a></p>
+                        </div>
+
+                        <div class="content col-xs-12">
+                            <a href="#">
+                                <h2>Teste de Título</h2>
+                                <p>Lorem ipsum dolor sit amet, ius semper quaeque an. Eam te meis elitr, quis reprimique omittantur has cu, everti sapientem et vis.</p>
+                            </a>
+                        </div>
+                    </article>
+
+                    <?php for($i = 1; $i < 4; $i++){ ?>
+                        <article class="col-xs-12 col-sm-6">
+                            <div class="image col-xs-4">
+                                <a href="#">
+                                    <img src="http://placehold.it/100x100" alt="Noticia" title="Noticia">
+                                    <p>3° Edição</p>
+                                </a>
+                            </div>
+                            <div class="content col-xs-8">
+                                <div class="col-sm-6 hidden-xs">
+                                    <p class="small">10/05/2015 - Por <a href="#">Ana Claudia</a></p>
+                                </div>
+                                <div class="col-sm-6 hidden-xs">
+                                    <p class="small pull-right"><a href="#"><i class="fa fa-comments-o"></i> 1 comentário</a></p>
+                                </div>
+                                <div class="col-xs-12">
+                                    <a href="#">
+                                        <h2>Teste de Título</h2>
+                                        <p>Lorem ipsum dolor sit amet, ius semper quaeque an. Eam te meis elitr... </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    <?php } ?>
+                </section>
+
+                <div class="ads col-xs-12 col-sm-4">
+                    <?php for($i = 1; $i < 4; $i++){ ?>
+                        <div class="ad col-xs-6 col-sm-12">
+                            <a href="#" target="_blank">
+                                <img src="http://placehold.it/320x100" alt="Anuncie Aqui" title="Anuncie Aqui">
+                            </a>
+                        </div>
+                    <?php } ?>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12">
+            <div class="ads">
+                <div class="container">
+                <?php for($i = 1; $i < 4; $i++){ ?>
+                    <div class="ad col-xs-6 col-sm-4">
+                        <a href="#" target="_blank">
+                            <img src="http://placehold.it/320x100" alt="Anuncie Aqui" title="Anuncie Aqui">
+                        </a>
+                    </div>
+                <?php } ?>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12">
+            <div class="container">
+
+                <div class="ads">
+                    <div class="ad ad-border col-xs-6 col-sm-4">
+                        <a href="#" target="_blank">
+                            <img src="http://placehold.it/320x200" alt="Anuncie Aqui" title="Anuncie Aqui">
+                        </a>
+                    </div>
+
+                    <div class="ad ad-border col-xs-6 col-sm-4">
+                        <a href="#" target="_blank">
+                            <img src="http://placehold.it/320x200" alt="Anuncie Aqui" title="Anuncie Aqui">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="interviews col-xs-12 col-sm-4">
+                    <h1><span>Entrevistas</span></h1>
+                    <?php for($i = 1; $i < 3; $i++){ ?>
+                        <article class="row">
+                            <div class="col-xs-4">
+                                <img src="http://placehold.it/100x100" alt="Entrevistado" title="Entrevistado">
+                            </div>
+                            <div class="col-xs-8">
+                                <h2>Nome do entrevistado</h2>
+                                <p>Lorem ipsum dolor sit amet, ius semper quaeque an. Eam te meis elitr...</p>
+                            </div>
+                        </article>
+                    <?php } ?>
+                </div>
+
+            </div>
+        </div>
+        <?php include "footer.php"; ?>
     </div>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>

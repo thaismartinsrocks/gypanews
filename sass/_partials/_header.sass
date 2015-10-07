@@ -31,14 +31,34 @@ header
       top: 1px solid $color-primary
       bottom: 3px solid $color-primary
 
+    @media #{$xsmall-max}
+      padding: 0 !important
+
+      .container
+        padding: 0
+
+    .mobile-menu
+      text-align: center
+      padding: 10px
+      color: $color-soft
+      cursor: pointer
+      background:
+        color: $color-primary
+
     ul
       text-align: center
+
+      @media #{$xsmall-max}
+        display: none
 
       li
         display: inline-block
         text:
           transform: uppercase
           align: center
+
+        @media #{$xsmall-max}
+          display: block
 
         &:hover
           background:
@@ -52,61 +72,3 @@ header
           height: 100%
           padding: 14px 18px
           display: block
-
-  .featured
-    background:
-      color: $color-gray-soft
-
-    p
-      width: 130px
-      float: left
-      margin:
-        left: 20px
-      color: $color-gray
-      text:
-        transform: uppercase
-      padding: 10px 0
-      background:
-        image: url("../images/arrow-right.png")
-        repeat: no-repeat
-        position-x: 105px
-        position-y: 10px
-
-    ul
-      width: 750px
-      float: left
-
-      li
-        font:
-          size: 0.8em
-        width: 100%
-        padding: 10px 0
-
-        a
-          color: $color-primary-soft
-          width: 100%
-          height: 100%
-          display: block
-
-    .buttons
-      float: right
-
-      .prev,
-      .next
-        width: 14px
-        height: 14px
-        float: left
-        cursor: pointer
-        margin: 0 2px
-        padding: 14px 0
-        background:
-          position-y: 10px
-          repeat: no-repeat
-
-      .prev
-        background:
-          image: url("../images/arrow-left.png")
-
-      .next
-        background:
-          image: url("../images/arrow-right.png")
