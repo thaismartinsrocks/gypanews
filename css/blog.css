@@ -114,13 +114,13 @@ header nav ul li a { width: 100%; height: 100%; padding: 14px 18px; display: blo
 .news article .content .small { padding: 5px 0; font-size: 0.6em; color: #b1b6c9; }
 .news article .content .small a { color: #b1b6c9; font-weight: 700; }
 .news article .content a p { color: #898989; }
+.news article .content a p.category { font-size: 0.8em; color: #b1b6c9; }
 .news .buttons { margin: 10px 0; padding: 10px 0; border-top: 1px solid #f6f6f6; }
 .news .buttons ul { text-align: center; }
 .news .buttons ul li { padding: 5px 10px; display: inline-block; }
 .news .buttons ul li a i { margin: 0 5px; font-size: 0.8em; }
 .news .buttons ul li a:hover { color: #202658; }
 
-.categories ul { text-align: center; }
 .categories ul li { padding: 5px 10px; display: inline-block; margin: 5px; background-color: #f6f6f6; }
 .categories ul li a { font-size: 0.8em; }
 
