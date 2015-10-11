@@ -2,6 +2,10 @@ header
   margin:
     top: 20px
 
+  @media #{$xsmall-max}
+    margin:
+      top: 0
+
   .logo
     padding:
       left: 0
@@ -24,6 +28,10 @@ header
       width: 100%
       float: right
 
+      @media #{$xsmall-max}
+        margin:
+          top: 10px
+
   nav
     margin:
       top: 20px
@@ -33,6 +41,8 @@ header
 
     @media #{$xsmall-max}
       padding: 0 !important
+      margin:
+        top: 10px
 
       .container
         padding: 0
@@ -40,10 +50,34 @@ header
     .mobile-menu
       text-align: center
       padding: 10px
+      overflow: hidden
       color: $color-soft
       cursor: pointer
       background:
         color: $color-primary
+
+      .logo
+        @media #{$xsmall-max}
+          padding: 0
+
+        img
+          width: 40px
+          float: left
+
+        p
+          float: left
+          color: #fff
+          margin:
+            top: 4px
+            left: 10px
+
+      .menu
+        margin:
+          top: 5px
+
+        i
+          margin:
+            left: 10px
 
     ul
       text-align: center

@@ -1,16 +1,13 @@
 .news
-  @media #{$xsmall-max}
-    padding: 0
-
-  .container
-    @media #{$xsmall-max}
-      padding: 0
-
   h1
     @extend %h1
 
     span
       @extend %h1-span
+
+  .nopadding-mobile
+    @media #{$xsmall-max}
+      padding: 0
 
   article
     padding: 0 15px 15px 0
@@ -40,7 +37,7 @@
           size: 0.7em
 
       img
-        max-width: 100%
+        width: 100%
 
     .content
       .small

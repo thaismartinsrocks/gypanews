@@ -1,3 +1,9 @@
+.interviews h1, .news h1 { font-size: 1.4em; font-weight: 700; text-transform: uppercase; color: #495a86; padding: 15px 0; border-bottom: 1px solid #495a86; margin-bottom: 15px; }
+
+.interviews h1 span, .news h1 span { padding: 10px 8px; border-bottom: 3px solid #495a86; }
+
+.interviews article h2, .news article .content a h2 { color: #495a86; margin: 8px 0; font-weight: 700; font-size: 1.2em; }
+
 /* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
 
@@ -16,25 +22,28 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .container-fluid { padding: 0; margin: 0; }
 
+@media (max-width: 970px) { .container { width: inherit; } }
+
 a { color: #495a86; }
 a:hover, a:active, a:active:hover, a:active:focus, a:focus, a:visited { text-decoration: none; }
 
-.interviews h1, .news h1 { font-size: 1.4em; font-weight: 700; text-transform: uppercase; color: #495a86; padding: 15px 0; border-bottom: 1px solid #495a86; margin-bottom: 15px; }
-
-.interviews h1 span, .news h1 span { padding: 10px 8px; border-bottom: 3px solid #495a86; }
-
-.interviews article h2, .news article .content a h2 { color: #495a86; margin: 8px 0; font-weight: 700; font-size: 1.2em; }
-
 header { margin-top: 20px; }
+@media (max-width: 767px) { header { margin-top: 0; } }
 header .logo { padding-left: 0; padding-top: 10px; padding-right: 20px; }
 header .logo img { width: 90%; }
 header .ad { padding: 0; }
 header .ad a { width: 100%; float: right; max-width: 728px; max-height: 90px; }
 header .ad img { width: 100%; float: right; }
+@media (max-width: 767px) { header .ad img { margin-top: 10px; } }
 header nav { margin-top: 20px; border-top: 1px solid #495a86; border-bottom: 3px solid #495a86; }
-@media (max-width: 767px) { header nav { padding: 0 !important; }
+@media (max-width: 767px) { header nav { padding: 0 !important; margin-top: 10px; }
   header nav .container { padding: 0; } }
-header nav .mobile-menu { text-align: center; padding: 10px; color: #fff; cursor: pointer; background-color: #495a86; }
+header nav .mobile-menu { text-align: center; padding: 10px; overflow: hidden; color: #fff; cursor: pointer; background-color: #495a86; }
+@media (max-width: 767px) { header nav .mobile-menu .logo { padding: 0; } }
+header nav .mobile-menu .logo img { width: 40px; float: left; }
+header nav .mobile-menu .logo p { float: left; color: #fff; margin-top: 4px; margin-left: 10px; }
+header nav .mobile-menu .menu { margin-top: 5px; }
+header nav .mobile-menu .menu i { margin-left: 10px; }
 header nav ul { text-align: center; }
 @media (max-width: 767px) { header nav ul { display: none; } }
 header nav ul li { display: inline-block; text-transform: uppercase; text-align: center; }
@@ -69,8 +78,8 @@ header nav ul li a { width: 100%; height: 100%; padding: 14px 18px; display: blo
 
 .featured { background-color: #f6f6f6; }
 .featured p { width: 130px; float: left; margin-left: 20px; color: #b1b6c9; text-transform: uppercase; padding: 10px 0; background-image: url("../images/arrow-right.png"); background-repeat: no-repeat; background-position-x: 105px; background-position-y: 10px; }
-.featured ul { width: 750px; float: left; }
-@media (max-width: 767px) { .featured ul { max-width: 80%; } }
+.featured ul { width: 650px; float: left; position: absolute; padding-left: 145px; }
+@media (max-width: 767px) { .featured ul { max-width: 100%; text-align: center; position: relative; padding-left: 0; } }
 .featured ul li { font-size: 0.8em; width: 100%; padding: 10px 0; }
 .featured ul li a { color: #495a86; width: 100%; height: 100%; display: block; }
 .featured .buttons { float: right; }
@@ -82,28 +91,35 @@ header nav ul li a { width: 100%; height: 100%; padding: 14px 18px; display: blo
 @media (max-width: 767px) { .interviews { padding: 20px 0; } }
 .interviews article img { max-width: 100%; }
 
-@media (max-width: 767px) { .news { padding: 0; } }
-@media (max-width: 767px) { .news .container { padding: 0; } }
+@media (max-width: 767px) { .news .nopadding-mobile { padding: 0; } }
 .news article { padding: 0 15px 15px 0; }
 .news article.first { min-height: 380px; }
 @media (max-width: 767px) { .news article.first { min-height: 100%; } }
 .news article .col-xs-12, .news article .col-xs-6, .news article .col-sm-6 { padding: 0; }
 .news article .image { padding: 0; }
 .news article .image p { position: absolute; bottom: 20px; padding: 4px 6px; color: #fff; background-color: #495a86; font-size: 0.7em; }
-.news article .image img { max-width: 100%; }
+.news article .image img { width: 100%; }
 .news article .content .small { padding: 5px 0; font-size: 0.6em; color: #b1b6c9; }
 .news article .content .small a { color: #b1b6c9; font-weight: 700; }
 .news article .content a p { color: #898989; }
 
-.ads { padding: 0; }
-.ads .ad { margin: 20px 0; text-align: center; }
-@media (max-width: 767px) { .ads .ad { margin: 0; padding: 0; } }
-.ads .ad img { max-width: 100%; }
-.ads .ad-border { margin: 50px 0; padding: 20px 15px 0 15px; border-top: 1px solid #495a86; }
-@media (max-width: 767px) { .ads .ad-border { margin: 0; padding: 0; border: 0; } }
+.ads { padding: 0; height: 100%; }
+@media (max-width: 767px) { .ads { width: 100%; } }
+.ads ul { text-align: center; }
+.ads ul li { display: block; }
+.ads ul li .ad { margin: 5px 0; text-align: center; min-height: 100%; height: auto; padding-right: 0; }
+@media (max-width: 767px) { .ads ul li .ad { padding: 0; margin: 0; } }
+.ads ul li .ad a { display: block; }
+.ads ul li .ad img { max-width: 100%; }
+@media (max-width: 767px) { .ads ul li .ad img { width: 100%; } }
+.ads ul li .ad-border { margin: 50px 0; padding: 20px 15px 0 15px; border-top: 1px solid #495a86; }
+@media (max-width: 767px) { .ads ul li .ad-border { margin: 0; padding: 0; border: 0; } }
+
+.paddingtop { padding-top: 35px; }
 
 footer { clear: both; background-color: #495a86; }
 footer .newsletter { background-color: #f6f6f6; color: #495a86; padding: 10px 0; position: relative; }
+@media (max-width: 767px) { footer .newsletter { padding: 10px 0 20px 0; } }
 footer .newsletter p { text-transform: uppercase; text-align: right; font-weight: 700; margin-top: 15px; margin-right: 40px; }
 @media (max-width: 767px) { footer .newsletter p { text-align: center; margin-right: 0; margin-bottom: 15px; } }
 footer .newsletter input { padding: 12px 115px 12px 12px; width: 100%; border: none; outline: none; color: #b1b6c9; }

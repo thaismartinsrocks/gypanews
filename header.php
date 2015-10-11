@@ -1,11 +1,11 @@
 <header>
     <div class="container">
-        <div class="logo col-xs-3 col-sm-2">
+        <div class="logo hidden-xs col-sm-2">
             <a href="#">
                 <img src="images/logo.png" alt="GypaNews" title="GypaNews">
             </a>
         </div>
-        <div class="ad col-xs-9 col-sm-10">
+        <div class="ad col-xs-12 col-sm-10">
             <a href="#">
                 <img src="http://placehold.it/728x90" alt="Anuncia Aqui" title="Anuncie Aqui">
             </a>
@@ -14,7 +14,15 @@
     <nav class="col-xs-12">
         <div class="container">
             <div class="hidden-sm hidden-md hidden-lg mobile-menu">
-                Menu <i class="fa fa-chevron-down"></i>
+                <div class="logo col-xs-6">
+                    <a href="#" class="pull-left">
+                        <img src="images/logo-white.png" alt="GypaNews" title="GypaNews">
+                        <p>GypaNews Online</p>
+                    </a>
+                </div>
+                <div class="menu col-xs-6">
+                    <p class="pull-right">Menu <i class="fa fa-bars"></i></p>
+                </div>
             </div>
             <ul>
                 <li><a href="#">Página Inicial</a></li>
@@ -37,7 +45,7 @@
                     <li><a href="#">20/10/2015 - Conheça o novo restaurante da Rua bla bla <?php echo $i; ?></a></li>
                 <?php } ?>
             </ul>
-            <div class="buttons">
+            <div class="hidden-xs buttons">
                 <div class="prev"></div>
                 <div class="next"></div>
             </div>

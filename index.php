@@ -87,7 +87,7 @@
         <div class="news col-xs-12">
 
             <div class="container">
-                <section class="col-xs-12 col-sm-8">
+                <section class="nopadding-mobile col-xs-12 col-sm-8">
                     <h1><span>Reportagens</span></h1>
 
                     <article class="first col-xs-12 col-sm-6">
@@ -139,47 +139,54 @@
                     <?php } ?>
                 </section>
 
-                <div class="ads col-xs-12 col-sm-4">
-                    <?php for($i = 1; $i < 4; $i++){ ?>
-                        <div class="ad col-xs-6 col-sm-12">
-                            <a href="#" target="_blank">
-                                <img src="http://placehold.it/320x100" alt="Anuncie Aqui" title="Anuncie Aqui">
-                            </a>
-                        </div>
-                    <?php } ?>
+                <div class="ads paddingtop col-xs-12 col-sm-4">
+                    <ul>
+                        <?php for($i = 1; $i < 5; $i++){ ?>
+                            <li>
+                                <div class="ad col-xs-12 col-sm-12">
+                                    <a href="#" target="_blank">
+                                        <img src="http://placehold.it/320x100?text=Anuncio+<?php echo $i ?>" alt="Anuncie Aqui" title="Anuncie Aqui">
+                                    </a>
+                                </div>
+                            </li>
+                        <?php } ?>
+                    </ul>
                 </div>
             </div>
         </div>
 
         <div class="col-xs-12">
-            <div class="ads">
-                <div class="container">
-                <?php for($i = 1; $i < 4; $i++){ ?>
-                    <div class="ad col-xs-6 col-sm-4">
-                        <a href="#" target="_blank">
-                            <img src="http://placehold.it/320x100" alt="Anuncie Aqui" title="Anuncie Aqui">
-                        </a>
-                    </div>
-                <?php } ?>
-            </div>
+            <div class="container">
+                <div class="ads">
+                    <ul>
+                        <?php for($i = 1; $i < 4; $i++){ ?>
+                            <li>
+                                <div class="ad col-xs-12 col-sm-4">
+                                    <a href="#" target="_blank">
+                                        <img src="http://placehold.it/320x100?text=Anuncio+<?php echo $i ?>" alt="Anuncie Aqui" title="Anuncie Aqui">
+                                    </a>
+                                </div>
+                            </li>
+                        <?php } ?>
+                    </ul>
+                </div>
             </div>
         </div>
 
         <div class="col-xs-12">
             <div class="container">
-
                 <div class="ads">
-                    <div class="ad ad-border col-xs-6 col-sm-4">
-                        <a href="#" target="_blank">
-                            <img src="http://placehold.it/320x200" alt="Anuncie Aqui" title="Anuncie Aqui">
-                        </a>
-                    </div>
-
-                    <div class="ad ad-border col-xs-6 col-sm-4">
-                        <a href="#" target="_blank">
-                            <img src="http://placehold.it/320x200" alt="Anuncie Aqui" title="Anuncie Aqui">
-                        </a>
-                    </div>
+                    <ul>
+                        <?php for($i = 1; $i < 3; $i++){ ?>
+                            <li>
+                                <div class="ad ad-border col-xs-12 col-sm-4">
+                                    <a href="#" target="_blank">
+                                        <img src="http://placehold.it/320x200?text=Anuncio+<?php echo $i ?>" alt="Anuncie Aqui" title="Anuncie Aqui">
+                                    </a>
+                                </div>
+                            </li>
+                        <?php } ?>
+                    </ul>
                 </div>
 
                 <div class="interviews col-xs-12 col-sm-4">

@@ -1,24 +1,48 @@
 .ads
   padding: 0
+  height: 100%
 
-  .ad
-    margin: 20px 0
+  @media #{$xsmall-max}
+    width: 100%
+
+  ul
     text-align: center
 
-    @media #{$xsmall-max}
-      margin: 0
-      padding: 0
+    li
+      display: block
 
-    img
-      max-width: 100%
+      .ad
+        margin: 5px 0
+        text-align: center
+        min-height: 100%
+        height: auto
+        padding:
+          right: 0
 
-  .ad-border
-    margin: 50px 0
-    padding: 20px 15px 0 15px
-    border:
-      top: 1px solid $color-primary
+        @media #{$xsmall-max}
+          padding: 0
+          margin: 0
 
-    @media #{$xsmall-max}
-      margin: 0
-      padding: 0
-      border: 0
+        a
+          display: block
+
+        img
+          max-width: 100%
+
+          @media #{$xsmall-max}
+            width: 100%
+
+      .ad-border
+        margin: 50px 0
+        padding: 20px 15px 0 15px
+        border:
+          top: 1px solid $color-primary
+
+        @media #{$xsmall-max}
+          margin: 0
+          padding: 0
+          border: 0
+
+.paddingtop
+  padding:
+    top: 35px
