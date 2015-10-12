@@ -2,7 +2,7 @@
 
 .interviews .container .box h1 span, .news h1 span, .article h1 span, .categories h1 span { padding: 10px 8px; border-bottom: 3px solid #495a86; }
 
-.interviews .container .box article h2, .news article .content a h2 { color: #495a86; margin: 8px 0; font-weight: 700; font-size: 1.2em; }
+.interviews .container .box article h2, .news article .content a h2, .comments h2 { color: #495a86; margin: 8px 0; font-weight: 700; font-size: 1.2em; }
 
 /* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
@@ -186,6 +186,13 @@ header nav ul li a { width: 100%; height: 100%; padding: 14px 18px; display: blo
 .article .buttons ul li a i { margin: 0 5px; font-size: 1.8em; width: 15px; }
 .article .buttons ul li a:hover { color: #202658; }
 .article .buttons ul li a p { width: 78%; }
+
+.comments { margin: 20px 0; padding: 0; }
+.comments ul li { width: 100%; margin: 20px 0; line-height: 1.4em; }
+.comments ul li .title { color: #495a86; margin-bottom: 5px; font-size: 0.8em; font-weight: 700; }
+.comments form input[type=text], .comments form textarea { margin: 5px 0; padding: 12px; width: 100%; border: none; outline: none; background-color: #f6f6f6; }
+.comments input[type=submit] { width: 120px; float: right; padding: 10px; background-color: #495a86; color: #fff; border: none; text-transform: uppercase; font-size: 0.8em; }
+.comments input[type=submit]:hover { background-color: #202658; }
 
 .categories ul li { padding: 5px 10px; display: inline-block; margin: 5px; background-color: #f6f6f6; }
 .categories ul li:hover { background-color: #b1b6c9; }

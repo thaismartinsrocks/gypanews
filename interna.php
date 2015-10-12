@@ -120,7 +120,30 @@
                     </div>
                 </div>
                 <div class="comments col-xs-12">
-                    <a name="comments"></a>
+                    <div class="col-xs-12">
+                        <h2>4 Comentário(s)</h2>
+                        <ul>
+                            <?php for($i = 1; $i < 5; $i++){ ?>
+                                <li>
+                                    <p class="title">Nome | 12/12/2015</p>
+                                    <p>Lorem ipsum dolor sit amet, cum diceret noluisse apeirian et, paulo choro aliquam id vim. Ea his fastidii menandri, novum abhorreant vel in, dico oblique quaeque at sed. An vitae impedit ius. Facer epicuri nec no, ludus quidam consequuntur no vix.</p>
+                                </li>
+                            <?php } ?>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-12">
+                        <a name="comments"></a>
+                        <h2>Deixe seu recado</h2>
+                        <form>
+                            <input type="text" name="nome" placeholder="Seu Nome">
+                            <input type="text" name="nome" placeholder="Seu Email">
+                            <input type="text" name="nome" placeholder="Seu Site">
+                            <textarea name="comment" rows="5" placeholder="Sua Mensagem"></textarea>
+                            <input type="submit" name="submit" value="Enviar">
+                        </form>
+                    </div>
+
                 </div>
             </article>
         </div>
