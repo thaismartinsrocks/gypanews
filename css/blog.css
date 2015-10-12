@@ -185,7 +185,7 @@ header nav ul li a { width: 100%; height: 100%; padding: 14px 18px; display: blo
 @media (max-width: 767px) { .article .buttons ul li { padding: 0; } }
 .article .buttons ul li a i { margin: 0 5px; font-size: 1.8em; width: 15px; }
 .article .buttons ul li a:hover { color: #202658; }
-.article .buttons ul li a p { width: 85%; }
+.article .buttons ul li a p { width: 78%; }
 
 .categories ul li { padding: 5px 10px; display: inline-block; margin: 5px; background-color: #f6f6f6; }
 .categories ul li:hover { background-color: #b1b6c9; }
