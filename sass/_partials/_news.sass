@@ -5,9 +5,8 @@
     span
       @extend %h1-span
 
-  .nopadding-mobile
-    @media #{$xsmall-max}
-      padding: 0
+  @media #{$xsmall-max}
+    padding: 0
 
   article
     padding:
@@ -18,6 +17,14 @@
     margin:
       bottom: 15px
 
+    @media #{$xsmall-max}
+      border:
+        bottom: 1px solid $color-gray
+      padding:
+        top: 5px
+        bottom: 13px
+      margin: 0
+
     &:hover
       background-color: $color-gray-soft
 
@@ -26,11 +33,6 @@
 
       @media #{$xsmall-max}
         min-height: 100%
-
-    .col-xs-12,
-    .col-xs-6,
-    .col-sm-6
-      padding: 0
 
     .image
       padding: 0
@@ -52,6 +54,8 @@
         width: 100%
 
     .content
+      padding: 0 5px
+
       .small
         padding: 5px 0
         font:
@@ -74,6 +78,9 @@
             font:
               size: .8em
             color: $color-gray
+      .resume
+        padding: 0
+
   .buttons
     margin: 10px 0
     padding: 10px 0

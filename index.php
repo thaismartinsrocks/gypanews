@@ -115,33 +115,38 @@
 
                     <?php for($i = 1; $i < 4; $i++){ ?>
                         <article class="col-xs-12 col-sm-6">
-                            <div class="image col-xs-4">
+                            <div class="image col-sm-4 hidden-xs">
                                 <a href="#">
                                     <img src="http://placehold.it/100x100" alt="Noticia" title="Noticia">
                                     <p>3° Edição</p>
                                 </a>
                             </div>
-                            <div class="content col-xs-8">
-                                <div class="col-sm-6 hidden-xs">
-                                    <p class="small">10/05/2015 - Por <a href="#">Ana Claudia</a></p>
+                            <div class="content col-sm-8 col-xs-12">
+                                <div class="small col-xs-12">
+                                    <p>10/05/2015 - Por <a href="#">Ana Claudia</a></p>
                                 </div>
-                                <div class="col-sm-6 hidden-xs">
-                                    <p class="small pull-right"><a href="#"><i class="fa fa-comments-o"></i> 1 comentário</a></p>
-                                </div>
-                                <div class="col-xs-12">
+                                <div class="resume col-xs-12">
                                     <a href="#">
                                         <h2>Teste de Título</h2>
-                                        <p>Lorem ipsum dolor sit amet, ius semper quaeque an. Eam te meis elitr... </p>
+                                        <p>Lorem ipsum dolor sit amet, ius semper quaeque an. Eam te meis... </p>
                                     </a>
+                                </div>
+                                <div class="small col-xs-12">
+                                    <p class="pull-right"><a href="#"><i class="fa fa-comments-o"></i> 1 comentário</a></p>
                                 </div>
                             </div>
                         </article>
                     <?php } ?>
+                    <div class="more col-xs-12">
+                        <a href="#">
+                            <p>Mais Reportagens <i class="fa fa-arrow-right"></i></p>
+                        </a>
+                    </div>
                 </section>
 
                 <div class="ads paddingtop col-xs-12 col-sm-4">
                     <ul>
-                        <?php for($i = 1; $i < 5; $i++){ ?>
+                        <?php for($i = 1; $i < 6; $i++){ ?>
                             <li>
                                 <div class="ad col-xs-12 col-sm-12">
                                     <a href="#" target="_blank">
@@ -155,25 +160,23 @@
             </div>
         </div>
 
-        <div class="col-xs-12">
+        <div class="ads col-xs-12">
             <div class="container">
-                <div class="ads">
-                    <ul>
-                        <?php for($i = 1; $i < 4; $i++){ ?>
-                            <li>
-                                <div class="ad col-xs-12 col-sm-4">
-                                    <a href="#" target="_blank">
-                                        <img src="http://placehold.it/320x100?text=Anuncio+<?php echo $i ?>" alt="Anuncie Aqui" title="Anuncie Aqui">
-                                    </a>
-                                </div>
-                            </li>
-                        <?php } ?>
-                    </ul>
-                </div>
+                <ul>
+                    <?php for($i = 1; $i < 4; $i++){ ?>
+                        <li>
+                            <div class="ad col-xs-12 col-sm-4">
+                                <a href="#" target="_blank">
+                                    <img src="http://placehold.it/320x100?text=Anuncio+<?php echo $i ?>" alt="Anuncie Aqui" title="Anuncie Aqui">
+                                </a>
+                            </div>
+                        </li>
+                    <?php } ?>
+                </ul>
             </div>
         </div>
 
-        <div class="col-xs-12">
+        <div class="interviews col-xs-12">
             <div class="container">
                 <div class="ads">
                     <ul>
@@ -189,19 +192,25 @@
                     </ul>
                 </div>
 
-                <div class="interviews col-xs-12 col-sm-4">
+                <div class="box col-xs-12 col-sm-4">
                     <h1><span>Entrevistas</span></h1>
                     <?php for($i = 1; $i < 3; $i++){ ?>
                         <article class="row">
-                            <div class="col-xs-4">
+                            <div class="col-sm-4 hidden-xs">
                                 <img src="http://placehold.it/100x100" alt="Entrevistado" title="Entrevistado">
                             </div>
-                            <div class="col-xs-8">
+                            <div class="col-xs-12 col-sm-8">
                                 <h2>Nome do entrevistado</h2>
                                 <p>Lorem ipsum dolor sit amet, ius semper quaeque an. Eam te meis elitr...</p>
                             </div>
                         </article>
                     <?php } ?>
+                </div>
+
+                <div class="more col-xs-12">
+                    <a href="#">
+                        <p>Mais Entrevistas <i class="fa fa-arrow-right"></i></p>
+                    </a>
                 </div>
 
             </div>
