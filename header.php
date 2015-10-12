@@ -14,13 +14,13 @@
     <nav class="col-xs-12">
         <div class="container">
             <div class="hidden-sm hidden-md hidden-lg mobile-menu">
-                <div class="logo col-xs-6">
+                <div class="logo col-xs-8">
                     <a href="#" class="pull-left">
                         <img src="images/logo-white.png" alt="GypaNews" title="GypaNews">
                         <p>GypaNews Online</p>
                     </a>
                 </div>
-                <div class="menu col-xs-6">
+                <div class="menu col-xs-4">
                     <p class="pull-right">Menu <i class="fa fa-bars"></i></p>
                 </div>
             </div>
