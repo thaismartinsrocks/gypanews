@@ -79,10 +79,10 @@
                 <div class="buttons col-xs-12">
                     <ul>
                         <li>
-                            <a href="#"><i class="fa fa-arrow-left"></i> Anterior</a>
+                            <a href="#"><i class="fa fa-angle-double-left"></i> Anterior</a>
                         </li>
                         <li>
-                            <a href="#">Próximo <i class="fa fa-arrow-right"></i> </a>
+                            <a href="#">Próximo <i class="fa fa-angle-double-right"></i> </a>
                         </li>
                     </ul>
                 </div>
