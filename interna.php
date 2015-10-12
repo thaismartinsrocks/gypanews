@@ -90,7 +90,20 @@
                     </div>
                 </div>
                 <div class="buttons col-xs-12">
-
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-angle-left pull-left"></i>
+                                <p class="pull-right text-left">Post Anterior  Post Anterior Post Anterior Post Anterior</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="pull-left text-right">Próximo Post Próximo Post Próximo Post Próximo Post Próximo Post</p>
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="author col-xs-12">
                     <div class="image col-xs-2">
@@ -98,19 +111,18 @@
                     </div>
                     <div class="resume col-xs-10">
                         <h2>Nome do Autor</h2>
-                        <p>Lorem ipsum dolor sit amet, vix probo partiendo id, harum vitae ne vix. Salutandi similique eum ne, mea alia sensibus efficiendi eu. Per doctus gloriatur ut, eum dico enim democritum an. Vel tollit nonumy an, at error nominavi antiopam nam. Ea erroribus vituperatoribus nec. In usu quod prodesset, ex unum blandit quo.</p>
                         <ul>
                             <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
                         </ul>
+                        <p>Lorem ipsum dolor sit amet, vix probo partiendo id, harum vitae ne vix. Salutandi similique eum ne, mea alia sensibus efficiendi eu. Per doctus gloriatur ut, eum dico enim democritum an. Vel tollit nonumy an, at error nominavi antiopam nam. Ea erroribus vituperatoribus nec. In usu quod prodesset, ex unum blandit quo.</p>
                     </div>
                 </div>
                 <div class="comments col-xs-12">
                     <a name="comments"></a>
                 </div>
             </article>
-
         </div>
 
         <?php include "footer.php"; ?>

@@ -32,9 +32,21 @@
           @media #{$xsmall-max}
             width: 100%
 
+      &.ad-current
+        width: 100%
+        min-height: 100px
+
+        a
+          width: 100%
+          display: block
+
+          img
+            width: 100%
+
       .ad-border
-        margin: 53px 0
-        padding: 20px 15px 0 15px
+        margin: 52px 0
+        padding:
+          top: 20px
         border:
           top: 1px solid $color-primary
 
@@ -42,3 +54,7 @@
           margin: 0
           padding: 0
           border: 0
+
+.ads-double
+  li.ad-current
+    min-height: 200px !important

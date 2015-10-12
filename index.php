@@ -178,7 +178,7 @@
 
         <div class="interviews col-xs-12">
             <div class="container">
-                <div class="ads">
+                <div class="ads ads-double">
                     <ul>
                         <?php for($i = 1; $i < 3; $i++){ ?>
                             <li>

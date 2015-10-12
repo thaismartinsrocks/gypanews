@@ -8,6 +8,10 @@
     bottom: 15px
     top: 35px
 
+  @media #{$xsmall-max}
+    margin:
+      top: 0
+
   .category
     color: $color-gray
     text-align: center
@@ -181,11 +185,20 @@
       li
         padding: 5px 10px
         display: inline-block
+        width: 49%
+        vertical-align: middle
+
+        @media #{$xsmall-max}
+          padding: 0
 
         a
           i
             margin: 0 5px
-            font-size: .8em
+            font-size: 1.8em
+            width: 15px
 
           &:hover
             color: $color-primary-dark
+
+          p
+            width: 85%
