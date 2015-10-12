@@ -74,7 +74,7 @@ $(document).ready(function() {
 
                 };
 
-                setInterval(change, 2000);
+                setInterval(change, 5000);
             });
         },
         isMobile: function() {
