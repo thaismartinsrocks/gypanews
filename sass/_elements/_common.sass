@@ -2,9 +2,17 @@
   padding:
     top: 35px
 
+  @media  #{$xsmall-max}
+    padding:
+      top: 15px
+
 .paddingtop-double
   padding:
     top: 70px
+
+  @media  #{$xsmall-max}
+    padding:
+      top: 35px
 
 .mobile-nopaddingtop
   @media  #{$xsmall-max}
@@ -18,3 +26,8 @@
 .paddingbottom-double
   padding:
     bottom: 70px
+
+.mobile-nopaddingbottom
+  @media  #{$xsmall-max}
+    padding:
+      bottom: 0

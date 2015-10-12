@@ -1,4 +1,4 @@
-<div class="paddingtop-double paddingbottom mobile-nopaddingtop col-xs-12 col-sm-4">
+<div class="paddingtop-double paddingbottom mobile-nopaddingbottom col-xs-12 col-sm-4 pull-right">
     <div class="search hidden-xs">
         <form method="post">
             <input type="text" name="s" placeholder="Pesquisar por...">

@@ -28,14 +28,18 @@ a { color: #495a86; }
 a:hover, a:active, a:active:hover, a:active:focus, a:focus, a:visited { text-decoration: none; }
 
 .paddingtop { padding-top: 35px; }
+@media (max-width: 767px) { .paddingtop { padding-top: 15px; } }
 
 .paddingtop-double { padding-top: 70px; }
+@media (max-width: 767px) { .paddingtop-double { padding-top: 35px; } }
 
 @media (max-width: 767px) { .mobile-nopaddingtop { padding-top: 0; } }
 
 .paddingbottom { padding-bottom: 35px; }
 
 .paddingbottom-double { padding-bottom: 70px; }
+
+@media (max-width: 767px) { .mobile-nopaddingbottom { padding-bottom: 0; } }
 
 .search { position: relative; }
 .search input { padding: 12px; width: 100%; border: none; outline: none; background-color: #f6f6f6; }
@@ -104,12 +108,14 @@ header nav ul li a { width: 100%; height: 100%; padding: 14px 18px; display: blo
 .interviews article img { max-width: 100%; }
 
 @media (max-width: 767px) { .news .nopadding-mobile { padding: 0; } }
-.news article { padding: 0 15px 15px 0; }
+.news article { padding-top: 5px; padding-bottom: 3px; padding-right: 5px; padding-left: 5px; margin-bottom: 15px; }
+.news article:hover { background-color: #f6f6f6; }
 .news article.first { min-height: 380px; }
 @media (max-width: 767px) { .news article.first { min-height: 100%; } }
 .news article .col-xs-12, .news article .col-xs-6, .news article .col-sm-6 { padding: 0; }
 .news article .image { padding: 0; }
 .news article .image p { position: absolute; bottom: 20px; padding: 4px 6px; color: #fff; background-color: #495a86; font-size: 0.7em; }
+@media (max-width: 767px) { .news article .image p { display: none; } }
 .news article .image img { width: 100%; }
 .news article .content .small { padding: 5px 0; font-size: 0.6em; color: #b1b6c9; }
 .news article .content .small a { color: #b1b6c9; font-weight: 700; }
@@ -122,6 +128,7 @@ header nav ul li a { width: 100%; height: 100%; padding: 14px 18px; display: blo
 .news .buttons ul li a:hover { color: #202658; }
 
 .categories ul li { padding: 5px 10px; display: inline-block; margin: 5px; background-color: #f6f6f6; }
+.categories ul li:hover { background-color: #b1b6c9; }
 .categories ul li a { font-size: 0.8em; }
 
 .ads { padding: 0; height: 100%; }

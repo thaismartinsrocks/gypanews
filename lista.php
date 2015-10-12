@@ -46,6 +46,9 @@
         <?php include('header.php'); ?>
 
         <div class="container">
+
+            <?php include "aside.php"; ?>
+
             <div class="news paddingtop paddingbottom col-xs-12 col-sm-8">
                 <h1><span>Reportagens</span></h1>
                 <?php for($i = 1; $i < 11; $i++){ ?>
@@ -84,9 +87,6 @@
                     </ul>
                 </div>
             </div>
-
-            <?php include "aside.php"; ?>
-
         </div>
 
         <?php include "footer.php"; ?>
