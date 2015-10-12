@@ -37,8 +37,8 @@
                     </a>
                 </div>
                 <div class="content col-xs-10">
-                    <div class="col-sm-6 hidden-xs">
-                        <p class="small">10/05/2015 - Por <a href="#">Ana Claudia</a></p>
+                    <div class="col-sm-12 hidden-xs">
+                        <p class="small"><a href="#">Entretenimento</a> | 10/05/2015 - Por <a href="#">Ana Claudia</a></p>
                     </div>
                     <div class="col-xs-12">
                         <a href="#">
