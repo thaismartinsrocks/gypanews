@@ -139,7 +139,7 @@
                     <?php } ?>
                     <div class="more col-xs-12">
                         <a href="#">
-                            <p>Mais Reportagens <i class="fa fa-arrow-right"></i></p>
+                            <p>Mais Reportagens <i class="fa fa-angle-double-right"></i></p>
                         </a>
                     </div>
                 </section>
@@ -209,7 +209,7 @@
 
                 <div class="more col-xs-12">
                     <a href="#">
-                        <p>Mais Entrevistas <i class="fa fa-arrow-right"></i></p>
+                        <p>Mais Entrevistas <i class="fa fa-angle-double-right"></i></p>
                     </a>
                 </div>
 
